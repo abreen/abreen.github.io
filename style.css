@@ -199,17 +199,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #me-img, h1, h2, h3, h4, h5, h6, a {
   animation-duration: 45s;
-  /* animation-timing-function: step-end; */
   animation-timing-function: cubic-bezier(1, 0, 0, 1);
   animation-delay: 1s;
   animation-iteration-count: Infinite;
-  animation-direction: normal; /* can be set to "alternate" to run animation, then run it backwards.*/
-  animation-fill-mode: none; /* can be used to retain keyframe styling after animation, with "forwards" */
-  animation-play-state: running; /* can be set dynamically to pause mid animation*/
-}
-
-.greeting {
-
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
 }
 
 .about {
@@ -286,11 +281,6 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("images/instagram-ffffff.svg");
 }
 
-/* .schools {
-  list-style-type: none;
-  padding: 0;
-} */
-
 .cell > ul, .cell > ol {
   list-style-type: none;
   padding: 0;
@@ -315,11 +305,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .school  {
   font-style: italic;
-}
-
-.courses {
-  /* list-style-type: square; */
-  /* padding-inline: unset; */
 }
 
 .semesters {
