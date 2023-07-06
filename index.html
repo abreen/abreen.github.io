@@ -24,85 +24,70 @@
 </head>
 
 <body>
-
-  <div class="cell greeting">
-    <h1>Hi, I&rsquo;m Alex, a software engineer and educator.</h1>
-  </div>
+  <h1 class="greeting">Hi, I&rsquo;m Alex, a software engineer and educator.</h1>
   <div class="me">
-    <img id="me-img" src="images/chroma.png" />
-    </div>
+    <img id="me-img" src="images/photo.jpg" />
+  </div>
 
-    <h2 class="cell contact-heading">Contact info &amp; links</h2>
-    <div class="cell contact">
-      <p>Email: <div class="email"></div></p>
-      <p><a href="https://www.linkedin.com/in/alexanderbreen/" target="_blank">LinkedIn</a></p>
-      <p><a href="https://github.com/abreen/" target="_blank">GitHub</a></p>
+  <h2 class="cell contact-heading">Contact info &amp; links</h2>
+  <dl class="contact">
+    <dt>Email</dt><dd><div class="email"></div></dd>
+    <dt>Zoom</dt><dd><a href="https://dcegather.canvas.harvard.edu/courses/94570/events/G2" target="_blank">Office hours</a> Sundays 4&ndash;5 PM ET or by appointment</dd>
+    <dt>GitHub</dt><dd><a href="https://github.com/abreen/" target="_blank">@abreen</a></dd>
+    <dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/alexanderbreen/" target="_blank">@alexanderbreen</a></dd>
+    <dt>Replit</dt><dd><a href="https://replit.com/@abreen" target="_blank">@abreen</a></dd>
+  </dl>
 
-      <p><a href="https://dcegather.canvas.harvard.edu/courses/94570/events/G2" target="_blank">Zoom office hours</a> Sundays 4&ndash;5 PM ET or by appointment</p>
-    </div>
+  <h2 class="cell">About me</h2>
+  <section class="about">
+    <p>
+      I was a <span class="sc">BA</span>/<span class="sc">MS</span> student and
+      senior teaching assistant in the
+      <a href="https://www.bu.edu/cs/" target="_blank">department of computer science</a>
+      at Boston University, from which I graduated in 2016.
+    <p>
+      From 2012 to 2016, I was in various teaching roles for CS courses at BU,
+      Harvard Extension School and Harvard Summer School. In 2016, I was the recipient of the
+      Excellence in Teaching Service award from BU&rsquo;s department of computer science.
+      I joined <a href="https://wayfair.com">Wayfair</a> in 2016 as a web developer.
+    </p>
+    <p>
+      In the &rsquo;10s I developed some open source tools for generating
+      static sites from Markdown
+      (<a href="https://github.com/abreen/Presto" target="_blank">Presto</a>),
+      a companion PHP application for accepting student submissions and displaying
+      grades (<a href="https://github.com/abreen/Apollo">Apollo</a>), and two iterations
+      of an automated grading tool, Socrates, first
+      <a href="https://github.com/abreen/socrates.py" target="_blank">in Python</a> and
+      then a GUI application
+      <a href="https://github.com/abreen/Socrates" target="_blank">in Java</a>.
+    </p>
+    <p>
+      I also designed the course websites for Dave Sullivan&rsquo;s courses at BU and Harvard
+      (e.g., <a href="https://www.cs.bu.edu/courses/cs111/" target="_blank">CS 111</a>
+      and <a href="http://sites.fas.harvard.edu/~cscie22/" target="_blank">E-22</a>),
+      which still use Presto today to generate HTML.
+    </p>
+    <p>
+      My interests include natural and programming languages,
+      systems programming (operating systems, compilers),
+      large/legacy software systems, education,
+      video games, vintage computing, photography, and high-resolution audio.
+    </p>
+  </section>
 
-    <h2 class="cell">About me</h2>
-    <div class="cell about">
-      <p>
-        I was a <span class="sc">BA</span>/<span class="sc">MS</span> student and
-        senior teaching assistant in the
-        <a href="https://www.bu.edu/cs/" target="_blank">department of computer science</a>
-        at Boston University, from which I graduated in 2016.
-      <p>
-        From 2012 to 2016, I was in various teaching roles for CS courses at BU,
-        Harvard Extension School and Harvard Summer School. In 2016, I was the recipient of the
-        Excellence in Teaching Service award from BU&rsquo;s department of computer science.
-        I joined <a href="https://wayfair.com">Wayfair</a> in 2016 as a web developer.
-      </p>
-      <p>
-        In the &rsquo;10s I developed some open source tools for generating
-        static sites from Markdown
-        (<a href="https://github.com/abreen/Presto" target="_blank">Presto</a>),
-        a companion PHP application for accepting student submissions and displaying
-        grades (<a href="https://github.com/abreen/Apollo">Apollo</a>), and two iterations
-        of an automated grading tool, Socrates, first
-        <a href="https://github.com/abreen/socrates.py" target="_blank">in Python</a> and
-        then a GUI application
-        <a href="https://github.com/abreen/Socrates" target="_blank">in Java</a>.
-      </p>
-      <p>
-        I also designed the course websites for Dave Sullivan&rsquo;s courses at BU and Harvard
-        (e.g., <a href="https://www.cs.bu.edu/courses/cs111/" target="_blank">CS 111</a>
-        and <a href="http://sites.fas.harvard.edu/~cscie22/" target="_blank">E-22</a>),
-        which still use Presto today to generate HTML.
-      </p>
-      <p>
-        My interests include natural and programming languages,
-        systems programming (operating systems, compilers),
-        large/legacy software systems, education,
-        video games, vintage computing, photography, and high-resolution audio.
-      </p>
-    </div>
-
-    <h2 class="cell">Teaching</h2>
-    <div class="cell">
-      <ul class="schools">
-        <li>
-          <span class="school">Harvard Extension School</span>
-            <ul class="courses">
-                <li>
-                    <a href="https://extension.harvard.edu/course-catalog/courses/crn/14309" target="_blank">CSCI E-22 Data Structures</a>
-                    <ul class="semesters">
-                        <li><a href="http://sites.fas.harvard.edu/~cscie22/">2022</a></li>
-                        <li>2021</li>
-                        <li>2020</li>
-                        <li>2019</li>
-                        <li>2018</li>
-                        <li>2017</li>
-                        <li>2016</li>
-                        <li>2015</li>
-                        <li>2014</li>
-                        <li>2013</li>
-                    </ul>
-                </li>
-                <li>
-                  <a href="http://sites.fas.harvard.edu/~cscie66/" target="_blank">CSCI E-66 Database Systems</a>
-                  <ul class="semesters">
+  <h2 class="cell">Teaching</h2>
+  <section class="teaching">
+  <ul>
+    <li>
+      <span class="school">Harvard Extension School</span>
+        <ul class="courses">
+            <li>
+                <a href="https://extension.harvard.edu/course-catalog/courses/crn/14309" target="_blank">CSCI E-22 Data Structures</a>
+                <ul class="semesters">
+                    <li><a href="http://sites.fas.harvard.edu/~cscie22/">2022</a></li>
+                    <li>2021</li>
+                    <li>2020</li>
                     <li>2019</li>
                     <li>2018</li>
                     <li>2017</li>
@@ -110,51 +95,63 @@
                     <li>2015</li>
                     <li>2014</li>
                     <li>2013</li>
-                  </ul>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <span class="school">Harvard Summer School</span>
-            <ul class="courses">
-                <li>
-                    <a href="http://sites.fas.harvard.edu/~libs111/" target="_blank">CSCI S-111 Intensive Introduction to Computer Science Using Java</a>
-                    <ul class="semesters">
-                        <li>2015</li>
-                        <li>2014</li>
-                        <li>2013</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <span class="school">Boston University</span>
-            <ul class="courses">
-                <li>
-                    CAS CS 111 Introduction to Computer Science I
-                    <ul class="semesters">
-                        <li>2016</li>
-                        <li>2015</li>
-                        <li>2014</li>
-                        <li>2013</li>
-                        <li>2012</li>
-                    </ul>
-                </li>
-                <li>
-                    CAS CS 112 Introduction to Computer Science II
-                    <ul class="semesters">
-                        <li>2015</li>
-                        <li>2014</li>
-                        <li>2013</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-      </ul>
-    </div>
+                </ul>
+            </li>
+            <li>
+              <a href="http://sites.fas.harvard.edu/~cscie66/" target="_blank">CSCI E-66 Database Systems</a>
+              <ul class="semesters">
+                <li>2019</li>
+                <li>2018</li>
+                <li>2017</li>
+                <li>2016</li>
+                <li>2015</li>
+                <li>2014</li>
+                <li>2013</li>
+              </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span class="school">Harvard Summer School</span>
+        <ul class="courses">
+            <li>
+                <a href="http://sites.fas.harvard.edu/~libs111/" target="_blank">CSCI S-111 Intensive Introduction to Computer Science Using Java</a>
+                <ul class="semesters">
+                    <li>2015</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span class="school">Boston University</span>
+        <ul class="courses">
+            <li>
+                CAS CS 111 Introduction to Computer Science I
+                <ul class="semesters">
+                    <li>2016</li>
+                    <li>2015</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                    <li>2012</li>
+                </ul>
+            </li>
+            <li>
+                CAS CS 112 Introduction to Computer Science II
+                <ul class="semesters">
+                    <li>2015</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+  </ul>
+</section>
 
-    <h2 class="cell">Work history</h2>
-    <div class="cell work">
+    <h2>Work history</h2>
+    <section class="work">
       <ul>
         <li>
           Harvard University, teaching fellow (2013&ndash;)
@@ -238,10 +235,10 @@
           <a href="https://www.829llc.com/" target="_blank">829 Studios</a>, contract software engineer (2011&ndash;2012)
         </li>
       </ul>
-    </div>
+    </section>
 
-    <h2 class="cell">Education</h2>
-    <div class="cell education">
+    <h2>Education</h2>
+    <section class="education">
       <ul>
         <li>
         Boston University (2011&ndash;2016)
@@ -263,6 +260,6 @@
         </ul>
         </li>
       </ul>
-    </div>
+    </section>
   </body>
 </html>

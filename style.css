@@ -1,119 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Karla:ital,wght@1,600&display=swap'); */
-
-@keyframes backgroundColors {
-  0% {
-    background-color: #379541;  
-  }
-
-  12.5% {
-    background-color: #009a91;  
-  }
-
-  25% {
-    background-color: #aa73ce;  
-  }
-
-  37.5% {
-    background-color: #d86177;  
-  }
-
-  50% {
-    background-color: #cf6c43;
-  }
-
-  62.5% {
-    background-color: #d86177;  
-  }
-
-  75% {
-    background-color: #aa73ce;  
-  }
-
-  87.5% {
-    background-color: #009a91;  
-  }
-
-  100% {
-    background-color: #379541;  
-  }
-}
-
-@keyframes textColors {
-  0% {
-    color: #379541;  
-  }
-
-  12.5% {
-    color: #009a91;  
-  }
-
-  25% {
-    color: #aa73ce;  
-  }
-
-  37.5% {
-    color: #d86177;  
-  }
-
-  50% {
-    color: #cf6c43;
-  }
-
-  62.5% {
-    color: #d86177;  
-  }
-
-  75% {
-    color: #aa73ce;  
-  }
-
-  87.5% {
-    color: #009a91;  
-  }
-
-  100% {
-    color: #379541;  
-  }
-}
-
-@keyframes borderBottomColors {
-  0% {
-    border-bottom-color: #379541;  
-  }
-
-  12.5% {
-    border-bottom-color: #009a91;  
-  }
-
-  25% {
-    border-bottom-color: #aa73ce;  
-  }
-
-  37.5% {
-    border-bottom-color: #d86177;  
-  }
-
-  50% {
-    border-bottom-color: #cf6c43;
-  }
-
-  62.5% {
-    border-bottom-color: #d86177;  
-  }
-
-  75% {
-    border-bottom-color: #aa73ce;  
-  }
-
-  87.5% {
-    border-bottom-color: #009a91;  
-  }
-
-  100% {
-    border-bottom-color: #379541;  
-  }
-}
-
 ::-moz-selection {
   color: #fff;
   background: #379541;
@@ -124,9 +8,9 @@
   background: #379541;
 }
 
-html, body, p, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   padding: 0;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -137,8 +21,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 32pt;
+  font-size: 40px;
   letter-spacing: -1px;
+  position: relative;
+  left: -2px;
+}
+
+.greeting {
+  color: #fff; /* bright */
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 30px;
+  position: relative;
+  left: -2px;
 }
 
 tt, code, pre {
@@ -146,30 +43,19 @@ tt, code, pre {
 }
 
 body {
-    display: grid;
-    grid-template-columns: auto;
-    grid-auto-rows: max-content;
-    background: #111; /* bg */
-    color: #c4c4c4; /* fg */
-    font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    /* font-size: 11pt; */
-    cursor: default;
-    line-height: 1.55;
-}
-
-.cell {
+  background: #191919; /* bg */
+  color: #c4c4c4; /* fg */
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  cursor: default;
+  line-height: 1.7;
   padding: 20px;
 }
 
-.cell > ul {
-  margin-top: 0;
-}
-
 a {
-  color: inherit;
+  color: #5198df;
   text-decoration: none;
-  border-bottom: 2px solid #379541;
-  animation-name: borderBottomColors;
+  border-bottom: 1px solid #5198df;
   cursor: pointer;
 }
 
@@ -178,37 +64,30 @@ a:hover {
   border-bottom-color: #fff !important; /* bright */
 }
 
-.sc {
-  font-size: smaller;
+/* https://stackoverflow.com/questions/1713048/how-to-style-dt-and-dd-so-they-are-on-the-same-line */
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+dl > dt { grid-column-start: 1; }
+dl > dd { grid-column-start: 2; }
+
+.contact dt {
+  color: #777; /* dim */
 }
 
-.me {
-
+.sc {
+  font-size: 90%;
 }
 
 #me-img {
   background: #379541;
-  animation-name: backgroundColors;
-  width: 100%;
+  width: 40%;
+  margin-top: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #379541;
-  animation-name: textColors;
-}
-
-#me-img, h1, h2, h3, h4, h5, h6, a {
-  animation-duration: 45s;
-  animation-timing-function: cubic-bezier(1, 0, 0, 1);
-  animation-delay: 1s;
-  animation-iteration-count: Infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-}
-
-.about {
-  font-size: 11pt;
 }
 
 .about p {
@@ -224,43 +103,11 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 
-.updates {
-  display: grid;
-  grid-template-columns: auto auto;
-  line-height: 1.3;
-  background-color: #222; /* bg-bright */
-}
-
-.updates > * {
-    margin-bottom: 10px;
-    margin-right: 10px;
-}
-
-.updates a {
-  border-bottom: none;
-}
-
-.update .date {
-  white-space: nowrap;
-  padding-left: 12px;
-  color: #777; /* dim */
-}
-
-.updates .more {
-  font-style: italic;
-  animation-name: textColors;
-}
-
-.updates .more:hover {
-  color: #fff !important; /* bright */
-}
-
 .links {
   grid-template-columns: auto auto;
   display: grid;
   grid-gap: 8px;
   margin: 20px 0;
-  line-height: 18px;
   vertical-align: middle;
   max-width: 300px;
 }
@@ -273,34 +120,32 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
 }
 
-.instagram {
-  background-image: url("images/instagram-c4c4c4.svg");
-}
-
-.instagram:hover {
-  background-image: url("images/instagram-ffffff.svg");
-}
-
-.cell > ul, .cell > ol {
+section > ul, section > ol {
   list-style-type: none;
   padding: 0;
 }
 
-.cell ul ul ul, .cell ol ul ul {
+ul ul ul, ol ul ul {
   list-style-type: disc;
 }
 
 .work ul ul ul, .education ul ul ul {
-  font-size: smaller;
+  font-size: 14px;
   color: #777; /* dim */
 }
 
 .work ul ul ul a, .education ul ul ul a {
+  color: #777; /* dim */
   border-bottom-color: #777 !important; /* dim */
 }
 
 .work ul ul ul a:hover, .education ul ul ul a:hover {
+  color: #fff; /* bright */
   border-bottom-color: #fff !important; /* bright */
+}
+
+.schools {
+  padding-top: 20px;
 }
 
 .school  {
@@ -314,12 +159,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .semesters li {
   display: inline;
-  padding-right: 2px;
+  padding: 3px 5px;
+  margin-right: 2px;
+  border-radius: 3px;
+  background: #292929; /* bg-bright */
   color: #777; /* dim */
 }
 
 .semesters li a {
   color: #c4c4c4; /* fg */
+  border-bottom: none;
 }
 
 footer {
@@ -327,100 +176,22 @@ footer {
   text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
-  body {
-    grid-template-columns: 12.5% auto 12.5% auto;
-  }
-
-  h1 {
-    font-size: 28pt;
-  }
-
-  .cell {
-
-  }
-
-  .me {
-    grid-row: 1;
-    grid-column: 1;
-  }
-  
-  .greeting {
-    grid-row: 1;
-    grid-column: 2;
-  }
-
-  .contact-heading {
-    grid-column: 3;
-  }
-
-  .contact {
-    grid-column: 4;
-  }
-
-  .updates {
-    grid-column: span 4;
-  }
-
-  footer {
-    grid-column: span 4;
-  }
-}
-
 @media screen and (min-width: 500px) and (max-width: 1000px) {
-  body {
-    grid-template-columns: 33% auto;
-  }
-
   h1 {
-    font-size: 26pt;
-  }
-
-  .me {
-    grid-row: 1;
-    grid-column: 1;
-  }
-
-  .greeting {
-    grid-row: 1;
-    grid-column: 2;
-  }
-
-  .updates {
-    /* grid-row: 1; */
-  }
-
-  .updates, footer {
-    grid-column: span 2;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  body {
-
-  }
-
   h1 {
-    font-size: 24pt;
-  }
-
-  .me {
-
-  }
-
-  .greeting {
-
-  }
-
-  .updates, footer {
-
+    font-size: 30px;
   }
 }
 
 @media (prefers-color-scheme: light) {
   body {
     background-color: #ededed; /* anti-bg */
-    color: #333; /* anti-fg */
+    color: #222; /* anti-fg */
   }
 
   a:hover {
@@ -428,32 +199,21 @@ footer {
     border-bottom-color: #000 !important; /* anti-bright */
   }
 
+  .greeting {
+    color: #000; /* anti-bright */
+  }
+
   .email {
     background-image: url("images/email-333333.svg");
   }
 
-  .updates {
-    background-color: #f3f3f3; /* anti-bg-bright */
-  }
-
-  .update .date {
-    color: #999; /* anti-dim */
-  }
-
-  .instagram {
-    background-image: url("images/instagram-333333.svg");
-  }
-
-  .instagram:hover {
-    background-image: url("images/instagram-000000.svg");
-  }
-
   .semesters li {
+    background: #e5e5e5; /* anti-bg-bright */
     color: #999; /* anti-dim */
   }
 
   .semesters li a {
-    color: #333; /* anti-fg */
+    color: #222; /* anti-fg */
   }
 
   .work ul ul ul, .education ul ul ul {
@@ -465,6 +225,7 @@ footer {
   }
 
   .work ul ul ul a:hover, .education ul ul ul a:hover {
+    color: #000; /* anti-bright */
     border-bottom-color: #000 !important; /* anti-bright */
   }
 
