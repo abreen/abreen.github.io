@@ -20,14 +20,16 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-h2 {
-  font-size: 26px;
-}
-
-h1, h2 {
+h1 {
   letter-spacing: -1px;
   position: relative;
   left: -2px;
+}
+
+h2 {
+  font-size: 26px;
+  position: relative;
+  left: -1px;
 }
 
 tt, code, pre {
@@ -73,16 +75,14 @@ dl > dd { grid-column-start: 2; }
 }
 
 #me {
-  width: 60%;
-  max-width: 300px;
+  width: 33%;
+  max-width: 250px;
   background: #379541;
   padding: 1%;
 }
 
 .greeting {
   font-style: italic;
-  font-size: 14px;
-  color: #fff; /* bright */
   margin-top: 0;
 }
 
@@ -175,10 +175,14 @@ ul ul ul, ol ul ul {
 @media screen and (min-width: 768px) {
   .greeting {
     font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
   }
 
   #me {
     float: right;
+    width: 200px;
+    margin: 20px;
   }
 }
 
