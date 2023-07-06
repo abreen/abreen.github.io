@@ -20,20 +20,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-h1 {
-  font-size: 40px;
-  letter-spacing: -1px;
-  position: relative;
-  left: -2px;
-}
-
-.greeting {
-  color: #fff; /* bright */
-  margin-top: 0;
-}
-
 h2 {
-  font-size: 30px;
+  font-size: 26px;
+}
+
+h1, h2 {
+  letter-spacing: -1px;
   position: relative;
   left: -2px;
 }
@@ -48,7 +40,7 @@ body {
   font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   cursor: default;
-  line-height: 1.7;
+  line-height: 1.6;
   padding: 20px;
 }
 
@@ -80,10 +72,18 @@ dl > dd { grid-column-start: 2; }
   font-size: 90%;
 }
 
-#me-img {
+#me {
+  width: 60%;
+  max-width: 300px;
   background: #379541;
-  width: 40%;
-  margin-top: 20px;
+  padding: 1%;
+}
+
+.greeting {
+  font-style: italic;
+  font-size: 14px;
+  color: #fff; /* bright */
+  margin-top: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -155,6 +155,7 @@ ul ul ul, ol ul ul {
 .semesters {
   list-style-type: none;
   padding-inline: unset;
+  line-height: 2;
 }
 
 .semesters li {
@@ -171,20 +172,13 @@ ul ul ul, ol ul ul {
   border-bottom: none;
 }
 
-footer {
-  color: #777; /* dim */
-  text-align: center;
-}
-
-@media screen and (min-width: 500px) and (max-width: 1000px) {
-  h1 {
-    font-size: 40px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  h1 {
+@media screen and (min-width: 768px) {
+  .greeting {
     font-size: 30px;
+  }
+
+  #me {
+    float: right;
   }
 }
 
@@ -227,9 +221,5 @@ footer {
   .work ul ul ul a:hover, .education ul ul ul a:hover {
     color: #000; /* anti-bright */
     border-bottom-color: #000 !important; /* anti-bright */
-  }
-
-  footer {
-    color: #999 !important; /* anti-dim */
   }
 }
