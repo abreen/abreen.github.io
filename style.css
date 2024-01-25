@@ -166,6 +166,7 @@ ul ul ul, ol ul ul {
   background: #292929; /* bg-bright */
   color: #777; /* dim */
   font-size: 14px;
+  white-space: nowrap;
 }
 
 .semesters li a {
