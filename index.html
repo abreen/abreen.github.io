@@ -6,14 +6,10 @@
     <title>Alex Breen</title>
     <meta name="theme-color" content="seagreen" />
     <style>
-      html,
       body {
-        overflow-x: hidden;
-      }
-      body {
-        position: relative;
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
           Roboto, Ubuntu;
+        overflow: hidden;
       }
       a {
         color: black;
@@ -24,14 +20,17 @@
       img {
         pointer-events: none;
       }
+      body,
+      main {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
       main {
         margin: 0;
         padding: 0;
         cursor: default;
         user-select: none;
-        position: fixed;
-        top: 0;
-        left: 0;
         height: 100%;
         width: 100%;
         display: flex;
