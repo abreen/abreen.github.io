@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "name": "abreen.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "html-minifier": "^4.0.0"
+  },
+  "scripts": {
+    "minify": "html-minifier --minify-css true --minify-js true --collapse-whitespace index.html --output minified.html"
+  }
+}
