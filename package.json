@@ -10,6 +10,6 @@
     "html-minifier": "^4.0.0"
   },
   "scripts": {
-    "minify": "html-minifier --minify-css true --minify-js true --collapse-whitespace index.html --output minified.html"
+    "minify": "html-minifier --minify-css --minify-js --collapse-whitespace --remove-comments --remove-attribute-quotes --sort-attributes --sort-class-name index.html --output minified.html"
   }
 }
